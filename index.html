@@ -14,25 +14,57 @@
     <title>simple website</title>
   </head>
   <body>
-    <p>this is <abbr title="an aothor of this article">ayman</abbr></p>
-    <article>
-      <h1>hello there!</h1>
-      <p>this is a trial article to show hoe this works and sharping my html</p>
-    </article>
-    <blockquote cite="cod-lvr.me">asndkllkd asjdnkj daljsajd</blockquote>
-    <dialog open>this is a closed dialog</dialog>
-    <address>
-      this article ment to be done by<br />
-      ayman gamal<br />
-      website:<br />
-      cod-lvr.me
-    </address>
-    <label for="animal-list">choose your animal:</label>
-    <input type="text" list="animals" name="animal" id="animal-list" />
-    <datalist id="animals">
-      <option value="cat"></option>
-      <option value="dog"></option>
-      <option value="other"></option>
-    </datalist>
+    <header id="header">
+      <!--start with a header element to add a background and nav links with logo-->
+      <div class="logo">
+        <a href="#"
+          ><!--add a link nested with logo image for accesabilty-->
+          <img src="./images/LogoMakr-8qhNFp.png" alt="website logo" />
+        </a>
+      </div>
+      <nav class="navBar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <!--a main content of body page-->
+      <section id="hero">
+        <!--a hero section-->
+        <article class="hero-content">
+          <h1>Do you like <strong>Night Owls</strong> ?</h1>
+          <p>if yes, i think you will like to buy one.. here's why</p>
+        </article>
+        <div class="hero-photo"></div>
+      </section>
+      <section class="owl-def">
+        <!--owl-def section-->
+        <article class="para-one">
+          <h2>what is owl?</h2>
+          <blockquote cite="https://en.wikipedia.org/wiki/Owl" class="content">
+            <p>
+              <em>Owls</em> are birds from the order Strigiformes, which
+              includes over 200 species of mostly solitary and nocturnal birds
+              of prey typified by an upright stance, a large, broad head,
+              binocular vision, binaural hearing, sharp talons, and feathers
+              adapted for silent flight. Exceptions include the diurnal northern
+              hawk-owl and the gregarious burrowing owl.
+            </p>
+            <p>
+              <em>Owls</em> hunt mostly small mammals, insects, and other birds,
+              although a few species specialize in hunting fish. They are found
+              in all regions of the Earth except the polar ice caps and some
+              remote islands.
+            </p>
+            <p>
+              <em> Owls </em> are divided into two families: the true (or
+              typical) owl family, Strigidae, and the barn-owl family,
+              Tytonidae.
+            </p>
+          </blockquote>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

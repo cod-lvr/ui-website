@@ -1,0 +1,97 @@
+*,
+::after,
+::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eff3f6;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+/* header navBar */
+#header {
+  padding: 0.6rem 2rem;
+  background-color: rgba(0, 0, 0, 0.655);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .logo {
+  width: 20%;
+}
+#header .logo img {
+  width: 100%;
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.navBar a {
+  color: white;
+  font-size: 0.9rem;
+}
+.navBar a:hover {
+  color: rgb(208, 207, 207);
+}
+/* main */
+/* hero section */
+#hero {
+  padding: 0 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+#hero .hero-photo {
+  background: url(../images/todd-steitle-ExnAdmi-Asc-unsplash.jpg);
+  width: 100%;
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+#hero .hero-content {
+  margin: 1rem 0;
+}
+#hero .hero-content h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #d1b018;
+}
+#hero .hero-content p {
+  margin: 0.8rem 0;
+  color: #848385;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  padding: 0 1rem;
+}
+/* sections */
+/* owl-def */
+.owl-def {
+  padding: 0 2rem;
+}
+.owl-def .para-one h2 {
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: #515151;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.para-one .content p {
+  margin: 1rem 0.5rem;
+  color: #848385;
+  font-size: 1.3rem;
+  text-align: justify;
+}
