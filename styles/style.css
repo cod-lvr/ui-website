@@ -8,8 +8,8 @@
 body {
   background-color: #eff3f6;
 }
-img {
-  width: 100%;
+figure img {
+  width: 430px;
 }
 a {
   text-decoration: none;
@@ -20,17 +20,18 @@ a {
   background-color: rgba(0, 0, 0, 0.655);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 #header .logo {
-  width: 20%;
+  width: 24%;
 }
 #header .logo img {
   width: 100%;
 }
 .navBar {
-  display: flex;
+  display: none;
+  /* display: flex; */
   justify-content: space-around;
   align-items: center;
   width: 50%;
@@ -81,6 +82,9 @@ a {
 .owl-def {
   padding: 0 2rem;
 }
+.owl-def .para-one {
+  margin: 1rem 0;
+}
 .owl-def .para-one h2 {
   margin: 1rem 0;
   font-size: 1.7rem;
@@ -94,4 +98,48 @@ a {
   color: #848385;
   font-size: 1.3rem;
   text-align: justify;
+}
+.para-one dl {
+  padding: 1rem;
+}
+.para-one dt {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #515151;
+}
+.para-one dd {
+  margin: 1rem 0rem;
+  color: #848385;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+/* owl-media section */
+.owl-media {
+  padding: 2rem;
+}
+.owl-media header h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #d1b018;
+  margin: 1rem 0;
+  text-align: center;
+}
+.owl-media figure {
+  padding: 1rem;
+}
+.owl-media figure img {
+  border-radius: 12px;
+}
+.owl-media figcaption {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #515151;
+  text-align: center;
+}
+/* footer */
+#footer {
+  padding: 1rem 2rem;
+  text-align: center;
 }
