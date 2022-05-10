@@ -142,6 +142,11 @@ li {
   color: #515151;
   text-align: center;
 }
+.owl-videos iframe {
+  width: 430px;
+  height: 315px;
+  border: 0;
+}
 /* footer */
 .footer-line {
   color: #d1b018;
