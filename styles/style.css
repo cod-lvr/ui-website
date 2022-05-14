@@ -62,6 +62,22 @@ li {
 .navBar a:hover {
   color: rgb(208, 207, 207);
 }
+/* media queries for header */
+@media screen and (min-width: 600px) {
+  #header {
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+  }
+  #header .logo {
+    width: 20%;
+  }
+  #header .navBar {
+    display: flex;
+  }
+  #header .navBar a {
+    font-size: 1.2rem;
+  }
+}
 /* main */
 /* hero section */
 #hero {
@@ -95,6 +111,20 @@ li {
   font-size: 1.3rem;
   text-transform: capitalize;
   padding: 0 1rem;
+}
+/* media queries for hero section */
+@media screen and (min-width: 600px) {
+  #hero {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #hero .hero-content {
+    width: 70%;
+    text-align: left;
+  }
+  #hero .hero-content p {
+    margin-top: 2rem;
+  }
 }
 /* sections */
 /* owl-def */
@@ -133,6 +163,24 @@ li {
   font-size: 1.3rem;
   text-align: justify;
 }
+/* media queries for owl-def */
+@media screen and (min-width: 600px) {
+  .owl-def .para-one h2 {
+    text-align: left;
+    margin: 2rem 0;
+  }
+  .para-one blockquote > p {
+    column-count: 2;
+    column-gap: 20px;
+    column-width: 200px;
+  }
+  .para-one .dataList__container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: minmax(300px, 1fr);
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
 /* owl-media section */
 .owl-media {
   padding: 2rem;
@@ -161,6 +209,30 @@ li {
   width: 430px;
   height: 315px;
   border: 0;
+}
+/* media qureis for owl-media section */
+@media screen and (min-width: 600px) {
+  .owl-media header h3 {
+    text-align: left;
+  }
+  .owl-media .owl-videos {
+    display: flex;
+    flex-direction: row;
+  }
+  .owl-videos figure iframe {
+    width: 350px;
+  }
+  .owl-imgs {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .owl-videos figure iframe {
+    width: 320px;
+  }
+  .owl-imgs img {
+    width: 90%;
+  }
 }
 /* footer */
 .footer-line {
@@ -224,4 +296,19 @@ li {
   color: #000000;
   font-size: 1rem;
   text-transform: uppercase;
+}
+/* media quires for footer */
+@media screen and (min-width: 600px) {
+  #footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-head,
+  .footer-contact {
+    width: 50%;
+  }
 }
